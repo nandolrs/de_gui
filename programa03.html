@@ -1,0 +1,181 @@
+<html>
+	<head>
+		<script>
+
+		/*
+		- nosso cérebro consegue entender melhor arranjos lineares
+		- para o computador é indiferente
+
+		*/
+
+		let rosaDosVentos = ['norte', 'sul','leste','oeste'];
+
+		let pontoCardealZero 	= rosaDosVentos[0];
+		let pontoCardealUm 		= rosaDosVentos[1];
+		let pontoCardealDois 	= rosaDosVentos[2];
+		let pontoCardealTres 	= rosaDosVentos[3];
+
+		let indice = 0;
+		let pontoCardeal 	= rosaDosVentos[indice]; //  rodaDosVentos[0];
+
+		indice=1;
+		pontoCardeal 	= rosaDosVentos[indice]; //  rodaDosVentos[1];
+
+		indice=2;
+		pontoCardeal 	= rosaDosVentos[indice]; //  rodaDosVentos[2];
+
+		indice=3;
+		pontoCardeal 	= rosaDosVentos[indice]; //  rodaDosVentos[3];
+
+		//
+
+		let personagens=[
+			,['bidu', 1959]
+			,['franjinha', 1959]
+			,['monica', 1960]
+			,['cebolinha', 1960]
+		];
+
+		const indiceBidu = 0;
+		const indiceFranjinha = 1;
+		const indiceMonica = 2;
+		const indiceCebolinha = 3;
+
+		let personagemBidu = personagens[indiceBidu];
+		let personagemFranjinha = personagens[indiceFranjinha];
+		let personagemMonica = personagens[indiceMonica];
+		let personagemCebolinha = personagens[indiceCebolinha];
+
+		const indiceNome = 0;
+		const  indiceAno = 1;
+
+		let BiduNome = personagemBidu[indiceNome];
+		let BiduAno = personagemBidu[indiceAno];
+
+		let FranjinhaNome = personagemFranjinha[indiceNome];
+		let FranjinhaAno = personagemFranjinha[indiceAno];
+
+		//
+
+		console.log('---- parte 1----')
+
+		for (let indice in rosaDosVentos)
+		{
+			console.log(rosaDosVentos[indice]);
+		}
+
+		console.log('---- parte 1.1----')
+
+		rosaDosVentos.map( (pontoCardeal) => 
+			console.log(pontoCardeal)
+		);
+
+
+		console.log('---- parte 2----')
+
+
+		let matriz=[10,20,30];
+        for (let indice in matriz)
+        {
+            console.log(matriz[indice]);
+		}    
+		
+		console.log('---- parte 2.2----')
+
+
+		matriz.map(numero =>
+            console.log(numero)
+		);
+
+
+		console.log('---- parte 3----')
+
+
+
+		for (let indice in personagens)
+        {
+            console.log(personagens[indice]);
+		}    
+
+		console.log('---- parte 3.1----')
+
+
+		for (let indice in personagens)
+        {
+            console.log(personagens[indice][indiceNome]);
+		}    
+
+		console.log('---- parte 3.2----')
+
+
+		for (let indice in personagens)
+        {
+            console.log(personagens[indice][indiceAno]);
+		}    
+
+
+		console.log('---- parte 3.3----')
+
+		personagens.map(personagem =>{
+				console.log(personagem);
+			}
+			);
+
+		console.log('---- parte 3.4----')
+
+		personagens.map(personagem =>{
+			console.log(personagem[indiceNome]);
+		}
+		);
+
+
+		console.log('---- parte 3.5----')
+
+		personagens.map(personagem =>{
+			console.log(personagem[indiceAno]);
+		}
+		);
+
+
+		console.log('---- parte 4----')
+
+		let personagens1=[
+            ,{nome:'bidu', anoLancamento:1959}
+            ,{nome:'franjinha', anoLancamento:1959}
+            ,{nome:'monica', anoLancamento:1960}
+            ,{nome:'cebolinha',anoLancamento:1960}
+        
+        ];
+
+		for (let indice in personagens1)
+        {
+            console.log(personagens1[indice]);
+		}    
+
+		console.log('---- parte 4.1----')
+
+        personagens1.map(personagem =>
+                console.log(personagem)
+            );
+
+		console.log('---- parte 5----')
+
+		
+		let cores = ['azul', 'amarelo', 'vermelho'];
+
+		for (let indice in cores)
+		{
+			console.log(cores[indice]);
+		}
+
+		console.log('---- parte 5.1----')
+
+		cores.map( (cor) => 
+			console.log(cor)
+		);
+
+
+		
+		</script>
+	</head>
+</html>

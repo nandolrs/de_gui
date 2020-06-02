@@ -1,0 +1,64 @@
+// classe, propriedade, método, parâmetro e função
+
+<html>
+    <head>
+        <script>
+            class pacote
+            {
+                static _aberto=0;
+                static _fechado = 0;
+
+                constructor(aberto, fechado)
+                {
+                    this._aberto=aberto;
+                    this._fechado=fechado;
+
+                }
+
+                abrir()
+                {
+                    //_aberto = 1;
+                    console.log('aberto');
+
+                    
+
+                }
+
+                aberto()
+                {
+                    if (this._aberto==1)
+                    {
+                        console.log('sim');
+                    }
+                    else
+                    {
+                        console.log('nao');
+                    }
+
+                }
+
+                setDia(valor)
+                {
+                    this._dia=valor;
+
+                }
+
+                getDia()
+                {
+                    return this._dia;
+                }
+
+
+            }
+
+
+            let p = new pacote(1,0);
+            p.abrir();
+            p.aberto();
+            p.setDia(8);
+            let dia = p.getDia();
+
+
+        </script>
+    </head>
+</html>

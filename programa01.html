@@ -1,0 +1,137 @@
+
+<html>
+	<head>
+		<script>
+
+		/*
+		- o que é javascript
+		
+		* é uma das linguages de programacao de computador mais utilizadas no mundo;
+		* é muito utilizada em páginas web para dar um aspecto dinâmico
+		* é uma linguagem que roda no cliente e não no navegador
+
+		- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+		- em nosso cérebro armazenamos informações importantes em memória, para serem acessadas mais tarde quando necessário;
+		- no computador não é diferente:
+			* utilizamos a memória para armazenar informações
+			* utilizamos constantes e variáveis para acessar a memória do computador quando necessário
+	    - veremos quando utilizar uma constante e quando utilizr uma variável e coo definílas
+
+		- no nosso cérebro as informações mudam com o passar do tempo
+		- no computador não é diferente, de nada adianta armazenarmos a informação se não pudermos altera-la quando necessário
+		- veremos como definir e alterar variáveis
+		*/
+
+
+		let informacao;				// let, define uma varíavel
+
+		// variaveis numéricas
+
+		informacao = 1;
+
+		informacao = 1.5;
+
+		// operacoes com variaveis numéricas
+
+
+		informacao = 1+1; // 2
+
+		informacao = 4-1; // 3
+
+		informacao = 2*2; // 4
+
+		informacao = 10*2; // 5
+
+		informacao = 12/2; // 6
+
+		informacao = (12/2)+1; //7
+
+		// carteira de saude (atributo peso)
+
+		let quilogramas = 3.5; 
+
+		quilogramas = 4; // 
+
+		quilogramas = 4.5;
+
+		quilogramas = 86;
+
+		// variaveis alfanuméricas (string)
+
+		let frase1 =  'atirei  ';
+
+		let frase2 = 'o pau  ';
+
+		let frase3 =  'no gato ';
+
+		// operações com alfanuméricas
+
+		let frase4 = frase1 + frase2 + frase3;
+
+		// funcoes de string
+
+		let frase1Tamanho = frase1.length; // tamanho em caracteres
+
+		let frase5 = frase3.substr(3,4);
+
+		let frase6 = frase1.repeat(3);
+
+		let frase1PosicaoLetra = frase1.indexOf('ir');
+	
+
+		// datas
+
+		let dataNascimento = new Date(1969,10,8, 23, 59, 59); // 08/11/1969 23:59:59
+
+		let dia = dataNascimento.getDate();
+
+		let mes = dataNascimento.getMonth(); 
+		
+		/*
+		 0=jan  
+		 1=fev 
+		 2=mar 
+		 3=abr
+		 4=mai
+		 5=jun
+		 6=jul
+		 7=ago
+		 8=set
+		 9=out
+		 10=nov
+		 11=dez
+		 */
+
+		let ano = dataNascimento.getFullYear();
+
+		let hora = dataNascimento.getHours();
+
+		let minuto  = dataNascimento.getMinutes();
+
+		let segundos = dataNascimento.getSeconds();
+
+		//
+
+		let hoje = new Date(Date.now());
+
+		let diah = hoje.getDate();
+
+		let mesh = hoje.getMonth(); // 0=jan  ; 1=fev ; 2=mar ; 3=abr; ...
+
+		let anoh = hoje.getFullYear();
+
+		let horah = hoje.getHours();
+
+		let minutoh  = hoje.getMinutes();
+
+		let segundosh = hoje.getSeconds();
+
+
+		//
+
+		let amanha  = hoje; 
+		amanha.setDate(amanha.getDate()+1);
+
+		</script>
+	</head>
+</html>

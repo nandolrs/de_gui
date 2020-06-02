@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <script>
+
+			/*
+			- o cerebro humano resolve e reconhece melhor problemas semelhantes
+			- para o computador é indiferente
+
+			*/
+        
+            let corpo = [{
+				cabeca:{
+					olho:[
+						{hemisferio:'direito',cor:'castanho'}
+						,{hemisferio:'esquerdo',cor:'castanho'}
+					]
+					,nariz:[
+						{hemisferio:'direito'}
+						,{hemisferio:'esquerdo'}
+					]
+					,boca:[
+						{situacao:'aberta'}
+					]					
+				}
+				,tronco:{
+					membros:{
+						perna:[
+							{hemisferio:'direito'}
+							,{hemisferio:'esquerdo'}
+						]
+						,braco:[
+							{hemisferio:'direito'}
+							,{hemisferio:'esquerdo'}
+						]
+
+					}
+
+				}
+			}];
+
+			corpo.map( (c) => 
+			{
+				console.log(c.cabeca.olho[0].hemisferio);
+				console.log(c.cabeca.olho[1].hemisferio);
+				console.log(c.cabeca.nariz[0].hemisferio);
+				console.log(c.cabeca.nariz[1].hemisferio);
+			}
+			);
+
+            /*
+
+
+			corpo
+				cabeca
+					olho
+					olho
+					nariz
+					boca
+					boca
+				tronco
+					membros
+						perna
+							pe
+								dedo
+								dedo
+								dedo
+								dedo
+								dedo
+						perna
+							pe
+							pe
+						braco
+							mao
+								dedo
+								dedo
+								dedo
+								dedo
+								dedo
+						braco
+							mao
+								dedo
+								dedo
+								dedo
+								dedo
+
+
+            */
+
+
+
+
+        </script>
+
+    </head>
+</html>

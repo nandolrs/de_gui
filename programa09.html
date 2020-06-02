@@ -1,0 +1,35 @@
+<html>
+	<head>
+	</head>
+	
+	<script>
+	
+	
+		function TratarResposta(p)
+		{
+			let resposta = p.target.responseText;
+			
+			let j = JSON.parse(resposta);
+			
+			for(x in j)
+			{
+				let nome = j[x].nome;
+				let sobreNome = j[x].sobrenome;
+				console.log(nome);
+			}
+			
+			
+		}
+		
+		let url='http://localhost/nando/programa01.txt';
+
+		let retorno = null;
+
+		let dom = new XMLHttpRequest();
+		dom.open('GET', url, true);
+	//	<!-- dom.responseType='text'; -->
+		dom.onload=TratarResposta;
+		dom.send();		
+
+	</script>
+</html>

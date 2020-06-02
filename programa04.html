@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <script>
+        
+        class Personagem
+        {
+            #idade=null;
+            idade = 5;
+
+            constructor()
+            {
+                this.nome = null;
+                this.anoLancamento = null;
+            }
+
+            getIdade()
+            {
+                return this.#idade;
+
+            }
+
+            setIdade(valor)
+            {
+                this.#idade = valor;
+            }
+        }                
+
+        console.log('---parte 1---');
+
+        let personagem =new Personagem();
+        console.log(personagem.nome);
+        console.log(personagem.anoLancamento);
+        console.log(personagem.idade);
+
+        console.log('---parte 2---');
+
+        personagem.nome='franjinha'
+        personagem.anoLancamento = 1969;
+        personagem.idade = 50;
+
+        console.log(personagem.nome);
+        console.log(personagem.anoLancamento);
+        console.log(personagem.idade);
+
+        // adicionar o método set/get
+
+        personagem.setIdade(66);
+        console.log(personagem.getIdade());
+        
+
+
+
+        </script>
+    </head>
+</html>
